@@ -29,9 +29,11 @@ githubWebhookServer:
   enabled: true
   replicaCount: 1
   syncPeriod: 10m
+  useRunnerGroupsVisibility: true
   secret:
+    enabled: true
     create: true
-    name: "arc-webhook-server"
+    name: "github-webhook-server"
   service:
     type: ClusterIP
     ports:
