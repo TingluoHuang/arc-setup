@@ -32,8 +32,7 @@ githubWebhookServer:
   useRunnerGroupsVisibility: true
   secret:
     enabled: true
-    create: true
-    name: "github-webhook-server"
+    name: "arc-github-app"
   service:
     type: ClusterIP
     ports:
