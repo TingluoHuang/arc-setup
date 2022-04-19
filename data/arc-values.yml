@@ -3,6 +3,10 @@ authSecret:
   name: "arc-github-app"
   annotations: {}
 
+image:
+  repository: "huangtingluo/actions-runner-controller"
+  tag: "canary"
+
 serviceAccount:
   create: true
   name: "arc-svc-account"
